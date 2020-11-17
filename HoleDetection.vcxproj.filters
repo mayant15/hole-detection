@@ -20,10 +20,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="HoleDetection\detection.h">
+    <ClInclude Include="HoleDetection\detection.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="HoleDetection\util.h">
+    <ClInclude Include="HoleDetection\util.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

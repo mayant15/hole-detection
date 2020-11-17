@@ -142,8 +142,8 @@
     <ClCompile Include="HoleDetection\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="HoleDetection\detection.h" />
-    <ClInclude Include="HoleDetection\util.h" />
+    <ClInclude Include="HoleDetection\detection.hpp" />
+    <ClInclude Include="HoleDetection\util.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

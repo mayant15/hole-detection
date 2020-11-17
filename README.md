@@ -1,6 +1,6 @@
 # Hole Detection for Point Clouds
 
-![Screenshots/holes.png]
+![holes](./Screenshots/holes.png)
 
 ## Usage
 
