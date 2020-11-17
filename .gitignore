@@ -1,0 +1,7 @@
+.vs/
+.ipynb_checkpoints/
+out/
+x86/
+x64/
+
+Hole_Detection_Test_Data.txt
