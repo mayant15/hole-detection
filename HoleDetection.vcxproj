@@ -139,7 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="HoleDetection\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HoleDetection\detection.h" />
+    <ClInclude Include="HoleDetection\util.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
