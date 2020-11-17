@@ -7,7 +7,7 @@
 #include <pcl/point_cloud.h>
 #include <pcl/point_types.h>
 #include <pcl/kdtree/kdtree_flann.h>
-#include <pcl/geometry/eigen.h>
+#include <pcl/segmentation/extract_clusters.h>
 
 // Aliases
 

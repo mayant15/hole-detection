@@ -10,24 +10,21 @@ int main(int argc, char* argv[])
         return 0;
     }
 
+    // Read the data and find its boundary
     auto pc = ReadIn(argv[1]);
+    auto boundary = ExtractBoundary(pc);
+    pc.reset();
 
-    KdTree kdtree;
-    kdtree.setInputCloud(pc);
+    // Get clusters in the boundary
+    auto clusters = ExtractEuclideanClusters(boundary);
 
-    std::vector<int> bdr;
-    for (int i = 0; i < pc->size(); ++i)
+    int j = 1;
+    for (auto cluster : clusters)
     {
-        auto p = (*pc)[i];
-        auto res = RadialNeighbors(p, 2.0f, kdtree);
-        Point c = Centroid(pc, res);
-        if (SquaredDistance(c, p) > 0.5)
-        {
-            bdr.push_back(i);
-        }
+        std::string filename = "boundary" + std::to_string(j) + ".txt";
+        WriteOut(cluster, filename);
+        ++j;
     }
-
-    WriteOut(pc, bdr, "boundary.txt");
 
     return 0;
 }
