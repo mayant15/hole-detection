@@ -123,4 +123,5 @@ bool FitCircle(PCRef pc, pcl::PointIndices& inliers, pcl::ModelCoefficients& coe
     seg.setDistanceThreshold (distanceThreshold);
     seg.setInputCloud (pc);
     seg.segment (inliers, coefficients);
+    return inliers.indices.size() != 0;
 }
